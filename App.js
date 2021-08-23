@@ -1,12 +1,5 @@
 import React from "react";
-import {
-  StyleSheet,
-  Text,
-  View,
-  Image,
-  TouchableOpacity,
-  Dimensions,
-} from "react-native";
+import { StyleSheet, Text, View, Image, TouchableOpacity } from "react-native";
 
 function App() {
   return (
@@ -16,7 +9,7 @@ function App() {
       </View>
       <View style={styles.headerContainer}>
         <Image
-          source={require("../frasesapp/assets/images/biscoito-fechado.png")}
+          source={require("../frasesapp/assets/images/biscoito-aberto.png")}
           style={styles.imgBiscoitoFechado}
         />
       </View>
@@ -44,8 +37,8 @@ const styles = StyleSheet.create({
     justifyContent: "center",
   },
   cabecalho: {
-    marginTop:20,
-    height:100,
+    marginTop: 30,
+    height: 100,
     width: "100%",
     backgroundColor: "#157354",
     alignItems: "center",
@@ -59,9 +52,9 @@ const styles = StyleSheet.create({
   headerContainer: {
     flex: 2,
     width: "100%",
-    marginTop: 25,
     alignItems: "center",
     justifyContent: "center",
+    backgroundColor: "grey",
   },
   imgBiscoitoFechado: {
     width: 250,
