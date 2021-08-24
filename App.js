@@ -15,6 +15,7 @@ var frases = [
 function App() {
   const [textoFrase, setTextoFrase] = useState("");
 
+  // função que cria um número aleatório para escolher a mensagem
   function quebrarBiscoito() {
     let randomNumber = Math.floor(Math.random() * frases.length);
     setTextoFrase(frases[randomNumber]);
@@ -56,6 +57,7 @@ function App() {
   );
 }
 
+//estilos usados nesta aplicação
 const styles = StyleSheet.create({
   container: {
     flex: 1,
@@ -72,7 +74,7 @@ const styles = StyleSheet.create({
     justifyContent: "center",
   },
   textoCabecalho: {
-    fontSize: 22,
+    fontSize: 28,
     fontWeight: "bold",
     color: "#efefef",
   },
@@ -107,6 +109,7 @@ const styles = StyleSheet.create({
     width: 200,
     alignItems: "center",
     justifyContent: "center",
+    backgroundColor:'#9f5000',
   },
   footerContainer: {
     width: "100%",
@@ -129,12 +132,13 @@ const styles = StyleSheet.create({
   },
   mensagem: {
     backgroundColor: "#9f5000",
-    width:'100%',
+    width:'80%',
     color: "white",
     fontSize: 18,
     textAlign: "center",
     justifyContent:'center',
     paddingHorizontal: 20,
+    borderRadius:20,
   },
 });
 
