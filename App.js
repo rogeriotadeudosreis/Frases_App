@@ -14,10 +14,12 @@ var frases = [
 
 function App() {
   const [textoFrase, setTextoFrase] = useState("");
-
+  
+  
   // função que cria um número aleatório para escolher a mensagem
   function quebrarBiscoito() {
-    let randomNumber = Math.floor(Math.random() * frases.length);
+    var random = Math.random();
+    let randomNumber = Math.floor(random * frases.length);
     setTextoFrase(frases[randomNumber]);
   }
 
